@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sakthivel Portfolio</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+nav {
+    position: fixed;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* SECTION */
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+section::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.65);
+}
+
+.content {
+    position: relative;
+    max-width: 800px;
+    animation: fadeIn 2s;
+}
+
+h1, h2 {
+    color: #00ffd5;
+}
+
+/* BUTTON */
+.btn {
+    padding: 12px 20px;
+    background: #e1e803;
+    color: black;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(30px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- HOME -->
+<section id="home" style="background-image:url('https://images.unsplash.com/photo-1498050108023-c5249f4df085');">
+<div class="content">
+    <h1>Sakthivel M</h1>
+    <p>Python Full Stack Developer | Selenium | Django</p>
+    <p>Enthusiastic software engineering graduate ready to start IT career.</p>
+
+   
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" style="background-image:url('https://images.unsplash.com/photo-1522071820081-009f0129c71c');">
+<div class="content">
+    <h2>About Me</h2>
+    <p>I’m an engineering graduate with hands-on experience in building scalable, user-centric web applications, combining strong fundamentals with practical development skills. I focus on writing clean, efficient code and continuously enhancing my expertise to deliver high-quality digital solutions.</p>
+    <p>B.E Computer Science and Engineering</p>
+    <p>Sri Ramakrishna Institute of Technology</p>
+    <p>CGPA: 7 (2021–2025)</p>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475');">
+<div class="content">
+    <h2>Projects</h2>
+    <p><b>Phishing Website Detection</b><br>
+    Machine learning system to detect phishing websites.</p>
+
+    <p><b>Railway Reservation System</b><br>
+    SQL-based booking system with search features.</p>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" style="background-image:url('https://images.unsplash.com/photo-1519389950473-47ba0277781c');">
+<div class="content">
+    <h2>Skills</h2>
+    <p>Python | Django | MySQL | HTML | CSS | Selenium</p>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="background-image:url('https://images.unsplash.com/photo-1507679799987-c73779587ccf');">
+<div class="content">
+    <h2>Contact</h2>
+    <p>Email: sakthivelm609@gmail.com</p>
+    <p>Phone: +91 6369936332</p>
+    <p>LinkedIn: linkedin.com/in/sakthivel-m609</p>
+</div>
+</section>
+
+</body>
+</html>
